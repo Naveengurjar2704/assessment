@@ -1,146 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>VegIt - Payment Gateway Request</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - Vegit App</title>
+  <script src="https://cdn.tailwindcss.com"></script>
   <style>
     body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
-      background-color: #f4f4f4;
-      color: #333;
-      line-height: 1.6;
+      font-family: 'Inter', sans-serif;
     }
-    header {
-      background-color: #4CAF50;
-      color: white;
-      padding: 1rem;
-      text-align: center;
-    }
-    section {
-      max-width: 900px;
-      margin: auto;
-      padding: 2rem;
-      background: white;
-      margin-top: 1.5rem;
-      border-radius: 12px;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
     }
     h1, h2 {
-      color: #2e7d32;
+      font-weight: 700;
+      color: #1a2a44;
     }
-    ul {
-      padding-left: 1.2rem;
+    p, li {
+      color: #4a5568;
+      line-height: 1.6;
     }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
-      font-size: 0.9rem;
-      color: #666;
+    a {
+      color: #2b6cb0;
+      text-decoration: underline;
     }
-    .screenshots {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-      justify-content: center;
+    a:hover {
+      color: #1a4971;
     }
-    .screenshots img {
-      max-width: 250px;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    @media (prefers-color-scheme: dark) {
+      h1, h2 {
+        color: #e2e8f0;
+      }
+      p, li {
+        color: #cbd5e0;
+      }
+      a {
+        color: #63b3ed;
+      }
+      a:hover {
+        color: #4299e1;
+      }
+      body {
+        background-color: #1a202c;
+      }
     }
   </style>
 </head>
-
 <body>
-  <header>
-    <h1>VegIt - Request for Payment Gateway Integration</h1>
-  </header>
+  <div class="container">
+    <h1 class="text-3xl md:text-4xl mb-6">Privacy Policy for Vegit App</h1>
+    <p class="mb-4">Last Updated: August 2, 2025</p>
+    <p class="mb-6">
+      [Your Company Name] ("we," "us," or "our") operates the Vegit mobile application (the "App"). This Privacy Policy explains how we collect, use, disclose, and protect your personal information when you use our App. By using the App, you agree to the terms of this Privacy Policy.
+    </p>
 
-  <section>
-    <h2>About the App</h2>
-    <p><strong>VegIt</strong> is a mobile application built for residents of 3-4 nearby societies in Ghaziabad to order fresh vegetables and milk directly from local farmers. We aim to simplify daily grocery shopping with doorstep delivery, trial options, and subscription services.</p>
-  </section>
-
-  <section>
-    <h2>Vegetable Products</h2>
-    <ul>
-      <li><strong>Tomatoes</strong> - Fresh and juicy, ideal for salads and cooking.</li>
-      <li><strong>Potatoes</strong> - Farm-fresh, delivered dirt-free and ready to use.</li>
-      <li><strong>Green Beans</strong> - Crisp and tender, perfect for stir-fry or boiling.</li>
-      <li><strong>Cauliflower</strong> - Large, white florets delivered straight from the farm.</li>
+    <h2 class="text-2xl md:text-3xl mt-8 mb-4">1. Information We Collect</h2>
+    <p class="mb-4">We may collect the following types of personal information when you use the Vegit App:</p>
+    <ul class="list-disc pl-6 mb-6">
+      <li><strong>Personal Information</strong>: Name, email address, phone number, delivery address, and payment information (e.g., credit card details) when you place orders or create an account.</li>
+      <li><strong>Usage Data</strong>: Information about how you interact with the App, such as pages visited, features used, and timestamps.</li>
+      <li><strong>Device Information</strong>: Device type, operating system, IP address, and unique device identifiers.</li>
+      <li><strong>Location Data</strong>: If you enable location services, we may collect your precise or approximate location to facilitate delivery or provide location-based services.</li>
     </ul>
-  </section>
 
-  <section>
-    <h2>Core Features</h2>
-    <ul>
-      <li>OTP-based user authentication via phone number</li>
-      <li>Browse fresh vegetables and dairy products</li>
-      <li>Milk subscription: trial, full-time, and one-time orders</li>
-      <li>Cart and flexible quantity selection (0.25kg–10kg)</li>
-      <li>Order history, tracking, and cancellation</li>
-      <li>Address management and delivery scheduling</li>
-      <li>Supports COD (Cash on Delivery) and UPI (coming soon)</li>
+    <h2 class="text-2xl md:text-3xl mt-8 mb-4">2. How We Collect Information</h2>
+    <p class="mb-4">We collect information in the following ways:</p>
+    <ul class="list-disc pl-6 mb-6">
+      <li><strong>Directly from You</strong>: When you provide information during account creation, order placement, or customer support interactions.</li>
+      <li><strong>Automatically</strong>: Through cookies, analytics tools, and device information when you use the App.</li>
+      <li><strong>Third Parties</strong>: From payment processors (e.g., Stripe, PayPal) or analytics providers (e.g., Google Analytics) to facilitate services or improve the App.</li>
     </ul>
-  </section>
 
-  <section>
-    <h2>Why We Need a Payment Gateway</h2>
-    <p>Currently, we support Cash on Delivery. To scale and provide a better experience, especially for milk subscriptions and prepaid delivery slots, we are seeking integration with UPI-based payment solutions like PhonePe, Google Pay, etc.</p>
-  </section>
-
-  <section>
-    <h2>Target Audience</h2>
-    <p>The app is designed for a limited user base of 3-4 societies, making it ideal for small-scale, hyperlocal logistics and easy order management.</p>
-  </section>
-
-  <section>
-    <h2>Status</h2>
-    <p><strong>Note:</strong> The app is currently under development with key modules like authentication, product listing, cart, subscription, and order placement already completed.</p>
-  </section>
-
-  <section>
-    <h2>Privacy Policy</h2>
-    <p>We respect your privacy. VegIt collects only essential information such as your phone number and delivery address. We do not share user data with third parties and ensure secure handling of all personal information.</p>
-  </section>
-
-  <section>
-    <h2>Return & Refund Policy</h2>
-    <p>Customers can request returns or cancellations before delivery. If unsatisfied with the quality of vegetables or milk, we offer full refunds or replacement. Returns must be initiated within the same day of delivery.</p>
-  </section>
-
-  <section>
-    <h2>Payment Intent</h2>
-    <p>All online payments made via the gateway will be directed toward prepaid milk subscriptions or vegetable orders. UPI integration will support faster, secure, and contactless payments, reducing the reliance on cash handling.</p>
-  </section>
-
-  <section>
-    <h2>App Screenshots</h2>
-    <div class="screenshots">
-      <img src="https://raw.githubusercontent.com/Naveengurjar2704/assessment/refs/heads/main/1000210289.jpg" alt="VegIt Home Screen">
-      <img src="https://raw.githubusercontent.com/Naveengurjar2704/assessment/refs/heads/main/1000210550.jpg" alt="VegIt Cart Screen"> 
-      <img src="https://raw.githubusercontent.com/Naveengurjar2704/assessment/refs/heads/main/1000210551.jpg" alt="VegIt Subscription Screen">
-    </div>
-    <p style="text-align:center; font-size: 0.9rem; color: #888;">Note: These are sample screenshots from the current development version.</p>
-  </section>
-
-  <section>
-    <h2>Contact Details</h2>
-    <p>For payment gateway queries or additional documentation, please contact:</p>
-    <ul>
-      <li><strong>Name:</strong> Naveen Nagar</li>
-      <li><strong>Email:</strong> contact@vegit.app</li>
-      <li><strong>Phone:</strong> +91 8433103280</li>
+    <h2 class="text-2xl md:text-3xl mt-8 mb-4">3. How We Use Your Information</h2>
+    <p class="mb-4">We use your personal information to:</p>
+    <ul class="list-disc pl-6 mb-6">
+      <li>Process and fulfill your orders, including delivery coordination.</li>
+      <li>Provide customer support and respond to inquiries.</li>
+      <li>Improve the App’s functionality and user experience.</li>
+      <li>Send promotional offers or notifications (with your consent).</li>
+      <li>Comply with legal obligations and protect against fraud.</li>
     </ul>
-  </section>
 
-  <footer>
-    &copy; 2025 VegIt. All rights reserved.
-  </footer>
+    <h2 class="text-2xl md:text-3xl mt-8 mb-4">4. Sharing Your Information</h2>
+    <p class="mb-4">We may share your personal information with:</p>
+    <ul class="list-disc pl-6 mb-6">
+      <li><strong>Service Providers</strong>: Third parties like payment processors, delivery services, and cloud hosting providers (e.g., Firebase) to perform services on our behalf.</li>
+      <li><strong>Legal Authorities</strong>: If required by law or to protect our rights, safety, or property.</li>
+      <li><strong>Business Transfers</strong>: In the event of a merger, acquisition, or sale of assets, your information may be transferred to the new entity.</li>
+    </ul>
+    <p class="mb-4">We do not sell your personal information to third parties.</p>
+
+    <h2 class="text-2xl md:text-3xl mt-8 mb-4">5. Data Retention</h2>
+    <p class="mb-4">
+      We retain your personal information only for as long as necessary to fulfill the purposes outlined in this Privacy Policy, unless a longer retention period is required by law. For example, order data may be retained for [X years] to comply with tax or accounting regulations. You may request deletion of your data by contacting us at [Your Email].
+    </p>
+
+    <h2 class="text-2xl md:text-3xl mt-8 mb-4">6. Your Rights</h2>
+    <p class="mb-4">Depending on your location, you may have the following rights regarding your personal information:</p>
+    <ul class="list-disc pl-6 mb-6">
+      <li><strong>Access</strong>: Request a copy of the personal information we hold about you.</li>
+      <li><strong>Correction</strong>: Request correction of inaccurate or incomplete data.</li>
+      <li><strong>Deletion</strong>: Request deletion of your personal information, subject to legal obligations.</li>
+      <li><strong>Opt-Out</strong>: Opt out of promotional communications or data sharing with third parties (where applicable).</li>
+      <li><strong>Data Portability</strong>: Request a copy of your data in a machine-readable format.</li>
+    </ul>
+    <p class="mb-4">To exercise these rights, contact us at [Your Email]. We will respond within [30 days] as required by applicable laws.</p>
+
+    <h2 class="text-2xl md:text-3xl mt-8 mb-4">7. Data Security</h2>
+    <p class="mb-4">
+      We implement reasonable security measures, such as encryption and secure servers, to protect your personal information. However, no method of transmission over the internet is 100% secure, and we cannot guarantee absolute security.
+    </p>
+
+    <h2 class="text-2xl md:text-3xl mt-8 mb-4">8. International Data Transfers</h2>
+    <p class="mb-4">
+      Your information may be transferred to and processed in countries other than your own, including [Your Country]. We ensure appropriate safeguards are in place, such as Standard Contractual Clauses, to comply with laws like GDPR for international data transfers.
+    </p>
+
+    <h2 class="text-2xl md:text-3xl mt-8 mb-4">9. Children’s Privacy</h2>
+    <p class="mb-4">
+      The Vegit App is not intended for children under 13. We do not knowingly collect personal information from children under 13. If you believe we have collected such information, please contact us at [Your Email] to request deletion.
+    </p>
+
+    <h2 class="text-2xl md:text-3xl mt-8 mb-4">10. Changes to This Privacy Policy</h2>
+    <p class="mb-4">
+      We may update this Privacy Policy from time to time. We will notify you of material changes via email, in-app notifications, or by updating the “Last Updated” date at the top of this page. Please review this policy periodically.
+    </p>
+
+    <h2 class="text-2xl md:text-3xl mt-8 mb-4">11. Contact Us</h2>
+    <p class="mb-4">
+      If you have questions or concerns about this Privacy Policy or our data practices, please contact us at:gurjarnaveen2704@gmail.com
+    </p>
+    <p class="mb-4">[VegIT]<br>
+      Email: [gurjarnaveen2704@gmail.com]<br>
+      
+    </p>
+    <p class="mb-4">For GDPR-related inquiries, you may also contact our Data Protection Officer at [gurjarnaveen2704@gmail.com].</p>
+  </div>
 </body>
-
 </html>
